@@ -12,6 +12,7 @@ void test_multiply(void);
 void test_divide(void);
 void test_prime(void);
 void test_even(void);
+void test_factoriol(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -30,6 +31,7 @@ int main() {
   CU_add_test(suite, "prime", test_prime);
   CU_add_test(suite, "evenodd", test_even);
   CU_add_test(suite, "evenodd", test_odd);
+   CU_add_test(suite, "factoriol", test_factorial);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -87,4 +89,9 @@ void test_even(void)
 void test_odd(void)
 {
   CU_ASSERT(0 == evenodd(3));
+}
+
+void test_factorial(viod)
+{
+  CU_ASSERT(120, factoriol(120));
 }
