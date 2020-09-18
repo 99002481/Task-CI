@@ -48,11 +48,11 @@ int isprime(int operand1)
 
 int evenodd(int operand1)
 {
-	int result= isevenorodd(operand1)
+	int result= isevenorodd(operand1);
 	return result;
 }
 
-int isevenorodd(operand1)
+int isevenorodd(int operand1)
 {
 	if(operand1%2==0)
 		return 1;
