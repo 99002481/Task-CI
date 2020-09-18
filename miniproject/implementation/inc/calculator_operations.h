@@ -1,12 +1,12 @@
-#ifndef CALCULATOR_OPERATIONS_H_INCLUDED
-#define CALCULATOR_OPERATIONS_H_INCLUDED
+#ifndef SMART_CALCULATOR_OPERATIONS_H_INCLUDED
+#define SMART_CALCULATOR_OPERATIONS_H_INCLUDED
 /**
-* @file calculator_operations.h
+* @file smart_calculator_operations.h
 * Calculator application with 4 mathematical operations
 *
 */
-#ifndef __CALCULATOR_OPERATIONS_H__
-#define __CALCULATOR_OPERATIONS_H__
+#ifndef __SMART_CALCULATOR_OPERATIONS_H__
+#define __SMART_CALCULATOR_OPERATIONS_H__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,7 +32,7 @@ int negative(int operand1);
 
 int zero(int operand1); 
 
-#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
+#endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
 
-#endif // CALCULATOR_OPERATIONS_H_INCLUDED
+#endif // SMART_CALCULATOR_OPERATIONS_H_INCLUDED
