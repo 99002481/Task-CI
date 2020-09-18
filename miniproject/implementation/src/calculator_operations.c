@@ -74,3 +74,22 @@ int factorial(int operand1)
   return operand1 * factorial(operand1-1);
 }
 
+int positive(int operand1)
+{
+	if(operand1>0)
+		return 1;
+}
+
+int negative(int operand1)
+{
+	if(operand1<0)
+		return -1;
+}
+
+int zero(int operand1)
+{
+	if(operand1>0)
+		return 0;
+}
+
+
