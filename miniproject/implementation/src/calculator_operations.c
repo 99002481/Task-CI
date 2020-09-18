@@ -71,6 +71,6 @@ int factorial(int operand1)
     return 1;
 
   /* Recursively calculate Factorial of the number */
-  return number * factorial(number-1);
+  return operand1 * factorial(operand1-1);
 }
 
