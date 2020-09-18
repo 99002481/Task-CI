@@ -11,6 +11,7 @@ void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_prime(void);
+void test_even(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -27,7 +28,8 @@ int main() {
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "prime", test_prime);
-
+  CU_add_test(suite, "evenodd", test_even);
+  CU_add_test(suite, "evenodd", test_odd);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -73,6 +75,16 @@ void test_divide(void) {
 
 void test_prime(void)
  {
-   CU_ASSERT(-1, prime(5));
-   CU_ASSERT(1, prime(4));
+   CU_ASSERT(-1 == prime(5));
+   CU_ASSERT(1 == prime(4));
  }
+
+void test_even(void)
+{
+  CU_ASSERT(1 == evenodd(2));
+}
+
+void test_odd(void)
+{
+  CU_ASSERT(0 == evenodd(3));
+}
