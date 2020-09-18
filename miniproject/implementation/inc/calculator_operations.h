@@ -50,6 +50,8 @@ int prime(int operand1);
 
 int evenodd(int operand1);
 
+int factorial(int number);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
