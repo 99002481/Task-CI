@@ -92,4 +92,31 @@ int zero(int operand1)
 		return 0;
 }
 
+int square_area(int operand1)
+{
+	return operand1*operand1;
+}
+int square_per(int operand1)
+ {
+	return 4*operand1;
+}
+
+int rectangle_area(int operand1, int operand2)
+ {
+	return operand1*operand2;
+}
+
+int rectangle_per(int operand1, int operand2)
+ {
+	return 2*operand1+2*operand2;
+}
+
+int circle_area(int operand1)
+{
+	return 3.14*operand1*operand1;
+}
+int circle_per(int operand1)
+{
+	return 2*3.14*operand1;
+}
 
