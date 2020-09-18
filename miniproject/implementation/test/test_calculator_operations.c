@@ -16,6 +16,12 @@ void test_factoriol(void);
 void test_positive(void);
 void test_negative(void);
 void test_zero(void);
+void test_sqar(void);
+void test_sqper(void);
+void test_recar(void);
+void test_recper(void);
+void test_cirar(void);
+void test_cirper(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -38,7 +44,12 @@ int main() {
   CU_add_test(suite, "positive", test_positive);
   CU_add_test(suite, "negative", test_negative);
   CU_add_test(suite, "zero", test_zero);
-
+  CU_add_test(suite, "square_area", test_sqar);
+  CU_add_test(suite, "square_per", test_sqper);
+  CU_add_test(suite, "rectangle_area", test_recar);
+  CU_add_test(suite, "rectangle_per", test_recper);
+  CU_add_test(suite, "circle_area", test_cirar);
+  CU_add_test(suite, "circle_per", test_cirper);
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
   CU_basic_set_mode(CU_BRM_VERBOSE);
@@ -109,4 +120,32 @@ void test_negative(void)
 void test_zero(void)
 {
   CU_ASSERT(0== zero(0));
+}
+
+void test_sqar(void) 
+{
+  CU_ASSERT(100 == square_area(10));
+}
+
+void test_sqper(void) 
+{
+  CU_ASSERT(40 == square_per(10));
+}
+void test_recar(void) 
+{
+  CU_ASSERT(50 == rectangle_area(10,5));
+}
+void test_recper(void) 
+{
+  CU_ASSERT(30 == rectangle_per(10,5));
+}
+void test_cirar(void) 
+{
+  CU_ASSERT(314 == circle_area(10));
+
+}
+void test_cirper(void) 
+{
+  CU_ASSERT(62 == circle_per(10));
+
 }
