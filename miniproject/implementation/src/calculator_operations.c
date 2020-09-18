@@ -1,4 +1,4 @@
-#include <calculator_operations.h>
+#include <smart_calculator_operations.h>
 int isprime(int operand1);
 int isevenorodd(int operand1);
 
