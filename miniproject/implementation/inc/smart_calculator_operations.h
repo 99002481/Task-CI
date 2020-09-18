@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include<math.h>
 
 int add(int operand1, int operand2);
 
@@ -31,6 +32,22 @@ int positive(int operand1);
 int negative(int operand1); 
 
 int zero(int operand1); 
+
+int triangle_area(int op1, int op2, int op3);
+
+int triangle_per(int op1, int op2, int op3);
+
+int square_area(int op1);
+
+int square_per(int op1);
+
+int rectangle_area(int op1, int op2);
+
+int rectangle_per(int op1, int op2);
+
+int circle_area(int op1);
+
+int circle_per(int op2);
 
 #endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
