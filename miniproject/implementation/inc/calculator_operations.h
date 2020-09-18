@@ -48,6 +48,8 @@ int divide(int operand1, int operand2);
 
 int prime(int operand1);
 
+int evenodd(int operand1);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
