@@ -98,7 +98,7 @@ void calculator_menu(void)
             getchar();
             break;
         case PRIME:
-            printf("\n\t %d\nEnter to continue",
+            printf("\n\t \nEnter to continue",
             calculator_operand1,
             prime(calculator_operand1));
 
