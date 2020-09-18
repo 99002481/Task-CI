@@ -1,5 +1,6 @@
 #include <calculator_operations.h>
 int isprime(int operand1);
+int isevenorodd(int operand1);
 
 int add(int operand1, int operand2)
 {
@@ -43,4 +44,18 @@ int isprime(int operand1)
   return -1;
   else
   return 1;
+}
+
+int evenodd(int operand1)
+{
+	int result= isevenorodd(operand1)
+	return result;
+}
+
+int isevenorodd(operand1)
+{
+	if(operand1%2==0)
+		return 1;
+	else
+		return 0;
 }
