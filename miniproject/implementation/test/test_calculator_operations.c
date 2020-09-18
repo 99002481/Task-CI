@@ -12,7 +12,8 @@ void test_multiply(void);
 void test_divide(void);
 void test_prime(void);
 void test_even(void);
-void test_factoriol(void);
+void test_odd(void);
+void test_factorial(void);
 void test_positive(void);
 void test_negative(void);
 void test_zero(void);
@@ -40,7 +41,7 @@ int main() {
   CU_add_test(suite, "prime", test_prime);
   CU_add_test(suite, "evenodd", test_even);
   CU_add_test(suite, "evenodd", test_odd);
-  CU_add_test(suite, "factoriol", test_factorial);
+  CU_add_test(suite, "factorial", test_factorial);
   CU_add_test(suite, "positive", test_positive);
   CU_add_test(suite, "negative", test_negative);
   CU_add_test(suite, "zero", test_zero);
@@ -104,7 +105,7 @@ void test_odd(void)
 
 void test_factorial(void)
 {
-  CU_ASSERT(120== factoriol(120));
+  CU_ASSERT(120== factorial(120));
 }
 
 void test_positive(void)
