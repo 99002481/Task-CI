@@ -1,15 +1,15 @@
 # Name of the project
-PROJECT_NAME = Smart Calculator
+PROJECT_NAME = Calculator
 
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = project_main.c\
-src/smart_calculator_operations.c\
+src/calculator_operations.c\
 
 # All test source files
-TEST_SRC = src/smart_calculator_operations.c\
+TEST_SRC = src/calculator_operations.c\
 test/test_calculator_operations.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
