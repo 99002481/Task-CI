@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5.prime number\n6. even or odd\n7.Factorial\n8. positive\n9. negative\n10.zero\n11. square area\n12. square perimeter\n13. reactangle area\n14. rectangle perimeter\n15. circle area\n16. circle perimeter\n17. remainder\n18.  Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5.prime number\n6. even or odd\n7.Factorial\n8. positive\n9. negative\n10.zero\n11. square area\n12. square perimeter\n13. reactangle area\n14. rectangle perimeter\n15. circle area\n16. circle perimeter\n17. remainder\n18.angstorm number\n19.square\n 20.cube\n21.  Exit");
     printf("\n\tEnter your choice\n");
 
      __fpurge(stdin);
@@ -182,6 +182,13 @@ void calculator_menu(void)
         case 17:
             printf("\n\t %d \nEnter to continue",
             rem(calculator_operand1, calculator_operand2));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 16:
+            printf("\n\t %d \nEnter to continue",
+            circle_per(calculator_operand1));
 
             __fpurge(stdin);
             getchar();
