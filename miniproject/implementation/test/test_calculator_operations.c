@@ -197,7 +197,7 @@ void test_pwr(void)
 
 void test_triarea(void)
 {
-  CU_ASSERT(27.712812==tri_area(8,8,8));
+  CU_ASSERT(27.712812==tri_area(8,8,9));
 }
 
 void test_tripm(void)
