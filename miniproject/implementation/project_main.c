@@ -10,7 +10,7 @@ unsigned int calculator_operation = 0;
 /* Operands on which calculation is performed */
 int calculator_operand1 = 0;
 int calculator_operand2 = 0;
-int calculator_operand2 = 0;
+int calculator_operand3 = 0;
 
 
 /* Display the menu of operations supported */
