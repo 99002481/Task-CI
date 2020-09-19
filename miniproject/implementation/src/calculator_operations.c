@@ -158,3 +158,7 @@ int cbe(int operand1)
 	return operand1*operand1*operand1;
 }
 
+int squareroot(int operand1)
+{
+	return sqrt(operand1);
+}
