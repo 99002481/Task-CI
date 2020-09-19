@@ -29,6 +29,8 @@ void test_sqr(void);
 void test_cbe(void);
 void test_sqroot(void);
 void test_pwr(void);
+void test_triarea(void);
+void test_tripm(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -63,6 +65,8 @@ int main() {
   CU_add_test(suite, "cbe", test_cbe);
   CU_add_test(suite, "squareroot", test_sqroot);
   CU_add_test(suite, "pwr", test_pwr);
+  CU_add_test(suite,"tri_area",test_triarea );
+  CU_add_test(suite,"tri_pm",test_tripm );
   
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -189,4 +193,14 @@ void test_sqroot(void)
 void test_pwr(void)
 {
   CU_ASSERT(4==pwr(2,2));
+}
+
+void test_triarea(void)
+{
+  CU_ASSERT(27.712812==tri_area(8,8,8));
+}
+
+void test_tripm(void)
+{
+  CU_ASSERT(24==tri_pm(8,8,8));
 }
