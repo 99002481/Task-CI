@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include <math.h>
 
 
 int add(int operand1, int operand2);
@@ -53,6 +54,7 @@ int sqr(int operand1);
 
 int cbe(int operand1);
 
+int squareroot(int operand1);
 #endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
 
