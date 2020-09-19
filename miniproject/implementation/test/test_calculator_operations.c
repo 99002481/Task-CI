@@ -24,7 +24,7 @@ void test_recper(void);
 void test_cirar(void);
 void test_cirper(void);
 void test_rem(void);
-void test_isangstrom(void)
+void test_isangstrom(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
