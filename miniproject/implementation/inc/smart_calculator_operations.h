@@ -55,6 +55,8 @@ int sqr(int operand1);
 int cbe(int operand1);
 
 int squareroot(int operand1);
+
+int power(int operand1,int operand2);
 #endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
 
