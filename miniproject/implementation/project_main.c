@@ -10,6 +10,7 @@ unsigned int calculator_operation = 0;
 /* Operands on which calculation is performed */
 int calculator_operand1 = 0;
 int calculator_operand2 = 0;
+int calculator_operand2 = 0;
 
 
 /* Display the menu of operations supported */
@@ -31,13 +32,13 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5.prime number\n6. even or odd\n7.Factorial\n8. positive\n9. negative\n10.zero\n11. square area\n12. square perimeter\n13. reactangle area\n14. rectangle perimeter\n15. circle area\n16. circle perimeter\n17. remainder\n18.angstorm number\n19.square\n 20.cube\n21.  Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5.prime number\n6. even or odd\n7.Factorial\n8. positive\n9. negative\n10.zero\n11. square area\n12. square perimeter\n13. reactangle area\n14. rectangle perimeter\n15. circle area\n16. circle perimeter\n17. remainder\n18.angstorm number\n19.square\n 20.cube\n21.squareroot\n22. power of\n23. triangle area\n24. triangle perimeter\n25.  Exit");
     printf("\n\tEnter your choice\n");
 
      __fpurge(stdin);
     scanf("%d", &calculator_operation);
 
-    if(18 == calculator_operation)
+    if(25 == calculator_operation)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
@@ -188,12 +189,54 @@ void calculator_menu(void)
             break;
         case 18:
             printf("\n\t %d \nEnter to continue",
-            circle_per(calculator_operand1));
+            isangstrom(calculator_operand1));
 
             __fpurge(stdin);
             getchar();
             break;
-        case 19:
+         case 19:
+            printf("\n\t %d \nEnter to continue",
+            sqr(calculator_operand1));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 20:
+            printf("\n\t %d \nEnter to continue",
+            cbe(calculator_operand1));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+         case 21:
+            printf("\n\t %d \nEnter to continue",
+            squareroot(calculator_operand1));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 22:
+            printf("\n\t %d \nEnter to continue",
+            pwr(calculator_operand1,calculator_operand2));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 23:
+            printf("\n\t %d \nEnter to continue",
+            tri_area(calculator_operand1,calculator_operand2,calculator_operand3));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 24:
+            printf("\n\t %d \nEnter to continue",
+            tri_pm(calculator_operand1,calculator_operand2,calculator_operand3));
+
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 25:
             exit(0);
             break;
         default:
@@ -204,5 +247,5 @@ void calculator_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((1 <= operation) && (18 >= operation)) ? VALID: INVALID;
+    return ((1 <= operation) && (25 >= operation)) ? VALID: INVALID;
 }
