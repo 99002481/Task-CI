@@ -23,6 +23,7 @@ void test_recar(void);
 void test_recper(void);
 void test_cirar(void);
 void test_cirper(void);
+void test_remainder(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -51,6 +52,8 @@ int main() {
   CU_add_test(suite, "rectangle_per", test_recper);
   CU_add_test(suite, "circle_area", test_cirar);
   CU_add_test(suite, "circle_per", test_cirper);
+  CU_add_test(suite, "remainder", test_remainder);
+  
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
   CU_basic_set_mode(CU_BRM_VERBOSE);
@@ -65,11 +68,9 @@ int main() {
 }
 
 /* Write all the test functions */
-void test_add(void) {
+void test_add(void) 
+{
   CU_ASSERT(30 == add(10, 20));
-
-  /* Dummy fail*/
-  CU_ASSERT(1500 == add(750, 7500));
 }
 
 void test_subtract(void) 
@@ -149,4 +150,8 @@ void test_cirper(void)
 {
   CU_ASSERT(62 == circle_per(10));
 
+}
+void test_remainder(void)
+{
+  CU_ASSERT(5==remainder(10,2));
 }
