@@ -27,6 +27,7 @@ void test_rem(void);
 void test_isangstrom(void);
 void test_sqr(void);
 void test_cbe(void);
+void test_sqroot(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -59,6 +60,7 @@ int main() {
   CU_add_test(suite, "isangstrom", test_isangstrom);
   CU_add_test(suite, "sqr", test_sqr);
   CU_add_test(suite, "cbe", test_cbe);
+  CU_add_test(suite, "squareroot", test_sqroot);
   
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -177,3 +179,7 @@ void test_cbe(void)
   CU_ASSERT(8==cbe(2));
 }
 
+void test_sqroot(void)
+{
+  CU_ASSERT(8==squareroot(16));
+}
