@@ -37,7 +37,7 @@ void calculator_menu(void)
      __fpurge(stdin);
     scanf("%d", &calculator_operation);
 
-    if(EXIT == calculator_operation)
+    if(18 == calculator_operation)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
@@ -181,7 +181,7 @@ void calculator_menu(void)
             break;
         case 17:
             printf("\n\t %d \nEnter to continue",
-            rem(calculator_operand1));
+            rem(calculator_operand1, calculator_operand2));
 
             __fpurge(stdin);
             getchar();
@@ -197,5 +197,5 @@ void calculator_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((1 <= operation) && (18 >= operation)) ? VALID: INVALID;
 }
