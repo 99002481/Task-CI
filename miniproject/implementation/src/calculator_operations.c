@@ -82,13 +82,13 @@ int positive(int operand1)
 
 int negative(int operand1)
 {
-	if(operand1==0)
-		return 0;
+	if(operand1<0)
+		return -1;
 }
 
 int zero(int operand1)
 {
-	if(operand1>0)
+	if(operand1==0)
 		return 0;
 }
 
