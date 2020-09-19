@@ -1,12 +1,12 @@
 #Requirement Analysis
 * High Level Requirements
-•	Any calculator needs to have the highest speed and accuracy.
+    * Any calculator needs to have the highest speed and accuracy.
 •	The system should be multifunctional.
 •	The System should be user friendly and compact.
 •	The smart calculator’s battery lifetime should be more.
 •	The precision value should be high.
 
-*Low Level Requirements
+* Low Level Requirements
 •	The speed of the calculator, it should give output within picoseconds.
 •	The system functions need to be specified and work properly.
 •	The precision of the calculator should be 10 power -15.
@@ -14,8 +14,8 @@
 
 #Requirement Mapping
 
-Product ID	 Description
-H_01	       Speed and accuracy should be more
+* Product ID	 Description
+* H_01	       Speed and accuracy should be more
 H_02	       The processor should be multifunctional
 H_03	       System should be compact
 H_04	       Battery lifetime should be more 
