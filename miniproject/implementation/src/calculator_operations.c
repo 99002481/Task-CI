@@ -125,3 +125,27 @@ int rem(int operand1, int operand2)
 	return operand1%operand2;
 }
 
+int isangstrom(int operand1)
+{
+    int temp_operand,loop_var=0,remainder=0,result=0;
+    for (temp_operand = operand1; temp_operand != 0; ++loop_var)
+    {
+       temp_operand /= 10;
+    }
+
+   for (temp_operand = operand1; temp_operand != 0; temp_operand /= 10)
+   {
+       remainder = temp_operand % 10;
+
+      // store the sum of the power of individual digits in result
+      result +=(remainder*remainder*remainder);
+   }
+
+   // if num is equal to result, the number is an Armstrong number
+   if ((int)result == operand1)
+    return 1;
+   else
+    return 0;
+}    
+
+
