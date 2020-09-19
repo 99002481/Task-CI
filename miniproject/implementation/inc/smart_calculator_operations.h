@@ -47,6 +47,8 @@ int circle_per(int operand2);
 
 int rem(int operand1,int operand2);
 
+int isangstrom(int operand1);
+
 #endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
 
