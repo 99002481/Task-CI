@@ -28,6 +28,7 @@ void test_isangstrom(void);
 void test_sqr(void);
 void test_cbe(void);
 void test_sqroot(void);
+void test_power(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -182,4 +183,9 @@ void test_cbe(void)
 void test_sqroot(void)
 {
   CU_ASSERT(8==squareroot(16));
+}
+
+void test_power(void)
+{
+  CU_ASSERT(4==power(2,2));
 }
