@@ -162,3 +162,8 @@ int squareroot(int operand1)
 {
 	return sqrt(operand1);
 }
+
+int power(int operand1,int operand2)
+{
+	return pow(operand1,operand2);
+}
