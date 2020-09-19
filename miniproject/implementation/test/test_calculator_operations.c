@@ -153,5 +153,5 @@ void test_cirper(void)
 }
 void test_rem(void)
 {
-  CU_ASSERT(5==remainder(10,2));
+  CU_ASSERT(0==remainder(10,2));
 }
