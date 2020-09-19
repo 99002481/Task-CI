@@ -148,4 +148,13 @@ int isangstrom(int operand1)
     return 0;
 }    
 
+int sqr(int operand1)
+{
+	return operand1*operand1;
+}
+
+int cbe(int operand1)
+{
+	return operand1*operand1*operand1;
+}
 
