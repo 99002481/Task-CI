@@ -25,6 +25,8 @@ void test_cirar(void);
 void test_cirper(void);
 void test_rem(void);
 void test_isangstrom(void);
+void test_sqr(void);
+void test_cbe(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -55,6 +57,8 @@ int main() {
   CU_add_test(suite, "circle_per", test_cirper);
   CU_add_test(suite, "rem", test_rem);
   CU_add_test(suite, "isangstrom", test_isangstrom);
+  CU_add_test(suite, "sqr", test_sqr);
+  CU_add_test(suite, "cbe", test_cbe);
   
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -162,3 +166,14 @@ void test_isangstrom(void)
 {
   CU_ASSERT(1==isangstrom(153));
 }
+
+void test_sqr(void)
+{
+  CU_ASSERT(4==sqr(2));
+}
+
+void test_cbe(void)
+{
+  CU_ASSERT(8==cbe(2));
+}
+
