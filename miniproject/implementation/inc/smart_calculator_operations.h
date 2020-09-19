@@ -57,6 +57,12 @@ int cbe(int operand1);
 int squareroot(int operand1);
 
 int pwr(int operand1,int operand2);
+
+float tri_area( int side1,int side2,int side3)
+
+int tri_pm( int side1,int side2,int side3)
+ 
+  
 #endif  /* #define __SMART_CALCULATOR_OPERATIONS_H__ */
 
 
