@@ -167,3 +167,15 @@ int pwr(int operand1,int operand2)
 {
 	return pow(operand1,operand2);
 }
+
+float tri_area( int side1,int side2,int side3)
+    {
+        float temp=(side1+side2+side3)/2;
+        float val=temp*(temp-side1)*(temp-side2)*(temp-side3);
+        return pow(val,0.5);
+    }
+   
+int tri_pm( int side1,int side2,int side3)
+    {
+        return side1+side2+side3;
+    }
