@@ -186,14 +186,14 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 16:
+        case 18:
             printf("\n\t %d \nEnter to continue",
             circle_per(calculator_operand1));
 
             __fpurge(stdin);
             getchar();
             break;
-        case 18:
+        case 19:
             exit(0);
             break;
         default:
