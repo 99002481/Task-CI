@@ -54,7 +54,7 @@ int main() {
   CU_add_test(suite, "circle_area", test_cirar);
   CU_add_test(suite, "circle_per", test_cirper);
   CU_add_test(suite, "rem", test_rem);
-  CU_add_test(suite, "isangstorm", test_isangstorm);
+  CU_add_test(suite, "isangstrom", test_isangstrom);
   
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -158,7 +158,7 @@ void test_rem(void)
   CU_ASSERT(0==remainder(10,2));
 }
 
-void test_isangstorm(void)
+void test_isangstrom(void)
 {
-  CU_ASSERT(1==isangstorm(153));
+  CU_ASSERT(1==isangstrom(153));
 }
