@@ -120,3 +120,8 @@ int circle_per(int operand1)
 	return 2*3.14*operand1;
 }
 
+int remainder(int operand1, int operand2)
+{
+	return operand1%operand2;
+}
+
